@@ -14,11 +14,13 @@ Several steps are needed to execute our method (1)radiomics feature extraction; 
 
 Pyradiomics is used to extracted radiomics features, instructions of using Pyradiomics to extracted radiomics features can be found [here](https://pyradiomics.readthedocs.io/en/latest/)
 
-Extracted and normalized features for RADCUE dataset and H&N 1 dataset can be found [here](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/tree/main/Extracted%20Features)
+Extracted and normalized radiomics features for RADCUE dataset and H&N 1 dataset can be found [here](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/tree/main/Extracted%20Features)
 
 ## (2)Deep Feature Extraction
 
 For extracted deep feature from action recognition networks, we need to transfer DICOM data to videos, You can use ['DICOMtoVIDEO
 /GenerateOPCVideo.py'](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/GenerateOPCVideo.py) to finish this transform. An example of transferred video of patient 'RADCURE-0005' can be found in [here](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/tree/main/DICOMtoVIDEO).
 
-Deep features extraction based on pretrained 'i3d_inceptionv1_kinetics400' can be finished by this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/FeatureExtractor.py). Deep feature extraction based on pretrained '' can be finished by this [file]()
+Deep features extraction based on pretrained 'i3d_inceptionv1_kinetics400' can be finished by this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/FeatureExtractor.py). Deep feature extraction based on pretrained 'r2plus1d_v2_resnet152_kinetics400' can be finished by this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/feat_extract_pytorch.py). Before ues mentioned files, you need to implement 'GluonCV' and 'Pytroch' platform.
+
+Extracted and normalilzed deep features for RADCUE dataset and H&N 1 can be found [here]().
