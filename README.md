@@ -18,4 +18,5 @@ Extracted and normalized features for RADCUE dataset and H&N 1 dataset can be fo
 
 ## (2)Deep Feature Extraction
 
-For extracted deep feature from action recognition networks, we need to transfer DICOM data to videos, You can use [''](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/GenerateOPCVideo.py) to finish this transform.
+For extracted deep feature from action recognition networks, we need to transfer DICOM data to videos, You can use ['DICOMtoVIDEO
+/GenerateOPCVideo.py'](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/GenerateOPCVideo.py) to finish this transform. An example of transferred video of patient 'RADCURE-0005' can be found in here.
