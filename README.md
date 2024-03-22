@@ -10,4 +10,4 @@ Several steps are needed to execute our method (1)radiomics feature extraction; 
 ## (1)Radiomics Feature extraction
 
 3D mask of regoin of interest is needed in radiomics feature extraction, mask files in RADCURE dataset are stored in RTSTRUC file, you need to use ['Pre_Processing For Radiomics
-/Create_3D_structure_for_Radiomics_RADCURE.py']() to reconstrucated 3D image data and corresonding mask. 3D mask of ROI available in H&N 1 dataset.
+/Create_3D_structure_for_Radiomics_RADCURE.py'](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/Pre_Processing%20For%20Radiomics/Create_3D_structure_for_Radiomics_RADCURE.py) to reconstrucated 3D image data and corresonding mask. 3D mask of ROI available in H&N 1 dataset.
