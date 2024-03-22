@@ -23,4 +23,4 @@ For extracted deep feature from action recognition networks, we need to transfer
 
 Deep features extraction based on pretrained 'i3d_inceptionv1_kinetics400' can be finished by this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/FeatureExtractor.py). Deep feature extraction based on pretrained 'r2plus1d_v2_resnet152_kinetics400' can be finished by this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/feat_extract_pytorch.py). Before ues mentioned files, you need to implement 'GluonCV' and 'Pytroch' platform.
 
-Extracted and normalilzed deep features for RADCUE dataset and H&N 1 can be found [here]().
+Extracted and normalilzed deep features for RADCUE dataset and H&N 1 can be found [here](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/DICOMtoVIDEO/feat_extract_pytorch.py).
