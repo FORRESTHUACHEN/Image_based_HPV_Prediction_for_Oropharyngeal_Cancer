@@ -27,10 +27,10 @@ Extracted and normalilzed deep features for RADCUE dataset and H&N 1 can be foun
 
 ## (3) tfrecord files making
 
-Before training and testing established models, you need to build tfrecord files at first, you can finish this action by using this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/TFRecords/tfwrite_3batch.py).
+Before training and testing established models, you need to build tfrecord files at first, you can finish this action by using this [file](https://github.com/FORRESTHUACHEN/Image_based_HPV_Prediction_for_Oropharyngeal_Cancer/blob/main/TFRecords/tfwrite_3batch.py).Before running our codes, you need to implement 'tensorflow' platform at first
 
 ## (4) model training and validation
 
-You can use this [file]() to train and valid our build model. 
+You can use file 'Classifierv2_3batch.py' to train and valid our build model. 
 
 
