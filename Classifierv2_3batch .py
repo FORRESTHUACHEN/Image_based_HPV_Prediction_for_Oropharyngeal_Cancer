@@ -53,13 +53,13 @@ n10ldeepfeatures_inputs_ = tf.placeholder(tf.float32,[None,400,1])
 ircsndeepfeatures_inputs_ = tf.placeholder(tf.float32,[None,400,1])
 labels_ = tf.placeholder(tf.int32, [1])
 
-trainset=tf.data.TFRecordDataset(filenames=['F:/DataforExtract/slowfast+i3d_5_fold_files_TOSHIBA/Trainuncombatrunning3_3.tfrecords'])
+trainset=tf.data.TFRecordDataset(filenames=['./slowfast+i3d_5_fold_files_TOSHIBA/Trainuncombatrunning3_3.tfrecords'])
 trainset=trainset.map(pares_tf)
 trainset=trainset.shuffle(7000).repeat(5002).batch(1)
 iterator = trainset.make_one_shot_iterator()
 next_patch = iterator.get_next()
 
-testset=tf.data.TFRecordDataset(filenames=['F:/DataforExtract/slowfast+i3d_5_fold_files_TOSHIBA/Testuncombatrunning3_3.tfrecords'])
+testset=tf.data.TFRecordDataset(filenames=['./slowfast+i3d_5_fold_files_TOSHIBA/Testuncombatrunning3_3.tfrecords'])
 testset=testset.map(pares_tf)
 testset=testset.shuffle(7000).repeat(12).batch(1)
 iterator2 = testset.make_one_shot_iterator()
@@ -227,12 +227,12 @@ with tf.Session() as sess:
     precision_final=[]
     recall_final=[]
     auc_final=[]
-    for running in range(10):
+    for running in range(1):
         print(running)
         sess.run(tf.global_variables_initializer())
-        total_batch=820
+        total_batch=1160
 
-        test_batch=205
+        test_batch=290
         for eps in range(epochs):
             lr=(5e-5)*((5-int(eps/100))/5)
             total_cost=0
